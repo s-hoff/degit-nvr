@@ -22,7 +22,7 @@ emitter.clone('./' + name)
     writeFile(join('./' + name, 'package-lock.json'), packageLock.replaceAll('package-name', name), 'utf8'),
   ]))
   .then(() => console.log(`
-Successfully created ${name} from ${target} in './${name}'
+Successfully created ${name} from ${source} in './${name}'
 Run this to finish and test the setup:
 cd ./${name}
 npm install
